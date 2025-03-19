@@ -18,7 +18,8 @@ export class AppComponent {
     email: '',
     dob: '',
     gender: '',
-    course: ''
+    course: '',
+    city: ''
   };
 
   courses: string[] = ['Computer Science', 'Mathematics', 'Physics', 'Chemistry'];

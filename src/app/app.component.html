@@ -110,6 +110,22 @@
           </div>
         </div>
 
+        <div class="mb-3">
+          <label for="city" class="form-label">City</label>
+          <input 
+            type="text" 
+            id="city" 
+            class="form-control" 
+            name="city" 
+            [(ngModel)]="student.city"
+            #city="ngModel"
+            required
+          />
+          <div *ngIf="city.invalid && city.touched" class="text-danger">
+            city is required.
+          </div>
+        </div>
+
         <!-- Submit Button -->
         <button type="submit" class="btn btn-primary">Register</button>
       </form>
